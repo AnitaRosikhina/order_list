@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<link rel="stylesheet" href="main.css">
+<body>
+    <div class="content">
+        <div class="container">
+                <label for="balance">
+                    <span>
+                        Баланc
+                    </span>
+                    <input disabled type="text" id="balance">
+                </label>
+                <label for="beer">
+                    <span>
+                        Пиво
+                    </span>
+                    <input disabled type="text" id="beer">
+                </label>
+                <label for="wine">
+                    <span>
+                        Вино
+                    </span>
+                    <input disabled type="text" id="wine">
+                </label>
+                <label for="pepsi">
+                    <span>
+                        Пепсі
+                    </span>
+                    <input disabled type="text" id="pepsi">
+                </label>
+        </div>
+        <div class="container">
+            <label for="count">Кількість
+                <input type="number" id="count">
+            </label>
+            <form name="radio">
+                <input checked name="drink" type="radio" value="beer">Пиво
+                <input name="drink" type="radio" value="wine">Вино
+                <input name="drink" type="radio" value="pepsi">Пепсі
+            </form>
+            <input id="add" type="button" value="Додати">
+            <textarea disabled id="basket" name="basket"></textarea>
+            <input id="buy" type="button" value="Купити">
+        </div>
+        <div class="container">
+            <div class="check"></div>
+            <span class="check_price"></span>
+        </div>
+    </div>
+    <div class="modal">
+        <div class="line_end close">
+            X
+        </div>
+        <div class="message">
+        </div>
+        <div class="line_end">
+            <input id="close" type="button" value="close">
+        </div>
+    </div>
+    <script src="shop.js" type="module"></script>
+    <script src="main.js" type="module"></script>
+</body>
+</html>
